@@ -1,0 +1,623 @@
+* {
+    font-family: "Sen",sans-serif;
+    font-size: 15px;
+}
+
+:root {
+    --color-principal: #8a2be2;
+    scroll-behavior: smooth;
+}
+
+h1 { font-size: 3em;}
+h2 { font-size: 2.7em;}
+h3 { font-size: 2em;}
+h4 { font-size: 1.5em;}
+p,li { font-size: 1.25em;}
+ul,ol,li { list-style: none;}
+
+.button {
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid #0005;
+    box-shadow: 2px 2px 10px #0008;
+    color: #fff;
+    background-color: var(--color-principal);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #71d;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+
+header {
+    background-color: #ddd;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .logo {
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: var(--color-principal);
+    display: flex;
+    flex-direction: row;
+}
+
+header .sarten {
+    width:  100px;
+    height: 50px;
+    transform: translateY(-17px);
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+header a:hover {
+    color: var(--color-principal);
+}
+
+
+
+#hero {  /*../recursos/media2/hero.jpg*/
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg, #0005, #0005),
+        url(../recursos/media2/Fondo_PANSTX.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 75px;
+    text-shadow: 0 0 10px #000;
+}
+
+#hero a {
+    font-size: 1.8em;
+}
+
+
+
+#conocenos {
+    background-color: #222222;
+    padding: 15px 0;
+}
+
+#conocenos .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg, #0007, #0007
+    ), url(../recursos/media2/confiteria.jpg);
+    padding: 200px 45px;
+}
+
+#conocenos h2 {
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 100px;
+}
+
+#conocenos h2 span {
+    color: var(--color-principal);
+    font-size: 1.5em;
+}
+
+#conocenos .layout img{
+    display: none;
+}
+
+#conocenos .layout {
+    background-color: #0005;
+    box-shadow: 0 0 10px #0005;
+    color: #fff;
+}
+
+
+
+#catalogo {
+    background-color: #fff;
+}
+
+#catalogo h2 {
+    text-align: center;
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+#catalogo .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 300px;
+}
+
+#catalogo .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+#encargos, #nav-encargos {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+#encargos .container {
+    padding: 40px 10px;
+    padding-bottom: 0;
+}
+
+#encargos h2 {
+    text-align: center;
+    padding: 15px;
+    color: var(--color-principal);
+}
+
+#encargos p {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px 10px;
+}
+
+#nav-encargos nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+#nav-encargos li, a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+#nav-encargos li:hover > a, #nav-encargos li:hover {
+    color: var(--color-principal);
+}
+
+
+
+#ventajas .container {
+    padding: 250px 5px;
+}
+
+#ventajas h3 {
+    padding: 20px;
+    text-align: center;
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+#ventajas ol {
+    padding: 20px;
+}
+
+#ventajas li {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+
+
+#precios {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+#precios .container {
+    padding: 150px 12px;
+}
+
+#precios h3 {
+    font-size: 3em;
+    padding: 20px 0;
+}
+
+#precios .container > p {
+    padding-bottom: 80px;
+}
+
+#precios .planes p {
+    display: none;
+}
+
+#precios .carta h4 {
+    padding-bottom: 6px;
+}
+
+#precios .carta {
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+#precios .carta:first-child {
+    background-image: linear-gradient(
+        0deg, #0008, #0008)
+        , url(../recursos/media2/particular.jpg);
+}
+
+#precios .carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg, #0008, #0008)
+        , url(../recursos/media2/restaurante.jpg);
+}
+
+#precios .carta:last-child {
+    background-image: linear-gradient(
+        0deg, #0008, #0008)
+        , url(../recursos/media2/empresa.jpg);
+}
+
+
+
+#lugares .container {
+    padding: 200px 10px;
+}
+
+#lugares h3 {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 2.7em;
+}
+
+#lugares h3 span {
+    color: var(--color-principal);
+    font-size: 1.25em;
+}
+
+#lugares h4 {
+    padding-bottom: 10px;
+}
+
+#lugares .proximo ol {
+    font-weight: bold;
+}
+
+#lugares .disponibles {
+    color: white;
+}
+
+#lugares .carta {
+    padding: 40px;
+}
+
+#lugares .coste {
+    display: none;
+}
+
+#lugares .disponibles, #lugares .proximo {
+    background-size: cover;
+    background-position: center center;
+}
+
+#lugares .disponibles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(0deg, #0007, #0007),
+    url(../recursos/media2/mundo.jpg);
+}
+
+#lugares .proximo {
+    margin-top: 200px;
+    background-image: url(../recursos/media2/atardecer-cropped.jpg);
+}
+
+
+
+#final {
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,#0007, #0007),
+    url(../recursos/media2/chefs.jpg);
+    background-size: cover;
+    background-position: 60% 50%;
+    display: flex;
+    align-items: center;
+}
+
+#final h2 {
+    text-align: center;
+    color: white;
+}
+
+
+
+footer .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 50px;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    header a {
+        padding: 0 40px;
+    }
+
+
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+
+    
+    #conocenos .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+    }
+
+    #conocenos .layout {
+        display: grid;
+        grid-template-areas:
+        "mapa mapa mapa"
+        "presentacion  bar bar";
+        gap: 5em;
+        background-color: #222222;
+        box-shadow: none;
+    }
+
+    #conocenos .layout img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #conocenos .img1 {
+        grid-area: mapa;
+    }
+
+    #conocenos .img2 {
+        grid-area: bar;
+    }
+
+    #conocenos .presentacion {
+        grid-area: presentacion;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #conocenos .presentacion p {
+        padding:0 100px;
+        font-size: 2em;
+    }
+
+
+
+    #catalogo {
+        padding: 300px 0;
+    }
+
+    #catalogo .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: 200px;
+        gap: 30px;
+        padding: 20px;
+    }
+
+
+
+    #nav-encargos {
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+
+
+    #ventajas .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ventajas ol {
+        margin: auto;
+    }
+
+
+
+    #precios .carta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: calc(25vh + 20vw);
+        margin: calc(2px + 5vw) 30px;
+    }
+
+    #precios .planes p {
+        display: block;
+        padding: 0 30px;
+    }
+
+    #precios .container > p {
+        font-size: 1.9em;
+    }
+
+
+
+    #lugares .container {
+        display: grid;
+        grid-template-areas: 
+        "head head"
+        "disponible coste"
+        "main main";
+        gap: 15px;
+        margin-bottom: 200px;
+    }
+
+    #lugares .disponibles .carta:last-child {
+        display: none;
+    }
+
+    #lugares h3 {
+        grid-area: head;          
+    }
+
+    #lugares .disponibles {
+        grid-area: disponible;
+        background-image: linear-gradient(0deg, #0007, #0007),
+        url(../recursos/media2/mundo.jpg);
+    }
+
+    #lugares .coste {
+        display: block;
+        color: white;
+        grid-area: coste;
+        background-image: linear-gradient(0deg, #000a, #000a),
+        url(../recursos/media2/mundo-rojo.jpg);
+    }
+
+    #lugares .proximo {
+        margin: 0;
+        grid-area: main;
+        background-image: linear-gradient(0deg, #0007, #0007),
+        url(../recursos/media2/barco.jpg);
+    }
+
+    #lugares .carta {
+        background-size: cover;
+        background-position: center center;
+        padding: calc(1em + 10vw);
+    }
+
+
+
+    #final h2 {
+        margin: auto;
+    }
+
+
+
+    footer .container {
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (min-width: 997px) {
+    #hero {
+        background-image: linear-gradient(
+        0deg, #0005, #0005),
+        url(../recursos/media2/Fondo_PANSTX.png);
+        background-position: center center;
+    }
+
+
+    #catalogo .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-auto-rows: 447px;
+        gap: 47px;
+        padding: 20px;
+        padding-bottom: 300px;
+    }
+
+    #catalogo h2 {
+        font-size: 6em;
+        line-height: 2em;
+    }
+
+
+    #precios .planes p {
+        display: block;
+        padding: 0 calc(5px + 20vw);
+    }
+
+    #precios .carta h4 {
+        font-size: 4em;
+    }
+
+    #lugares .carta h4 {
+        font-size: 2.7em;
+    }
+
+    #lugares .carta ol {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 890px) {
+    #nav-encargos nav {
+        padding: 35px 0;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 997px) {
+    #lugares .carta h4 {
+        font-size: 2.5em;
+    }
+
+    #lugares .carta ol {
+        font-size: 1.3em;
+    }
+}
